@@ -31,7 +31,7 @@ public static void Run(string myQueueItem, ICollector<ScanResultSimple> outputTa
         MachineName = Environment.MachineName
     });
     
-    log.Info($"Downloaded {myQueueItem}  in {duration}ms, {result.ContentLength} Byte on Machine {Environment.MachineName}");
+    log.Info($"Downloaded {myQueueItem}  in {duration}ms, {result.ContentLength} Bytes on Machine {Environment.MachineName}");
 }
 
 public class ScanResultSimple
