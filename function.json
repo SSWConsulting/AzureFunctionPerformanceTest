@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "urls",
+      "connection": "linkauditorfunction_STORAGE"
+    },
+    {
+      "type": "table",
+      "name": "outputTable",
+      "tableName": "downloadresults",
+      "connection": "linkauditorfunction_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
